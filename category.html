@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en " dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title mt-2>category</title mt-2>
+    <link rel="icon" href="images/logo4-removebg-preview.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- start header  -->
+    <header>
+     <div class="top-header  d-flex align-items-center py-1" >
+     <div class="container ">
+      <div class="row ">
+        <div class="col-6 col-md-4">
+            <a href="">
+                <img src="images/logo4-removebg-preview.png" width="60px" height="40px" alt="logo">
+            </a>
+        </div>
+        <div class=" col-6 col-md-4">
+            <input class="form-control input-search" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+        </div>
+        <div class="col-md-4 left-header d-flex align-items-center justify-content-end d-none d-md-flex ">
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="offcanvasExample">
+                <span>السلة</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="" data-bs-toggle="offcanvas" data-bs-target="#login" aria-controls="offcanvasExample">
+                <span>الدخول</span>
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="">
+                <span>المفضلة</span>
+                <i class="fa-solid fa-heart"></i>
+            </a>
+        </div>
+      </div>
+     </div>
+     </div>
+
+     <div class="buttom-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            
+             <button class="navbar-toggler mini-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+              <div>
+                <button class="navbar-toggler mini-icon" type="button"  data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="offcanvasExample">
+               <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+                <button class="navbar-toggler mini-icon" type="button"data-bs-toggle="offcanvas" data-bs-target="#login" aria-controls="offcanvasExample">
+               <i class="fa-solid fa-user"></i>
+              </button>
+              </div>
+
+
+               
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                        <a class="navbar-brand home" href="index.html">الرئيسية</a>
+                     </li>
+                   <li class="nav-item">
+                       <a class="nav-link nava active" aria-current="page" href="#">بوكسات</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                      <li class="nav-item dropdown">
+          <a class="nav-link nava dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            باقات ورد
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ورد وكيك</a></li>
+            <li><a class="dropdown-item" href="#"> ورد وقهوة</a></li>
+            <li><a class="dropdown-item" href="#"> ورد طبيعي</a></li>
+            <li><a class="dropdown-item" href="#"> ورد صناعي</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">  غير ذلك</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nava dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            هدايا نسائية
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">أكسسوارات</a></li>
+            <li><a class="dropdown-item" href="#"> عطور</a></li>
+            <li><a class="dropdown-item" href="#"> مكياج</a></li>
+            <li><a class="dropdown-item" href="#"> ألبسة</a></li>
+            <li><a class="dropdown-item" href="#"> ساعات</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">منوعة</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nava dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            هدايا رجالية
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">مسابح</a></li>
+            <li><a class="dropdown-item" href="#"> ألبسة</a></li>
+            <li><a class="dropdown-item" href="#"> عطور</a></li>
+            <li><a class="dropdown-item" href="#"> ساعات</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">منوعة</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nava dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            تسوق حسب المناسبة
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">هدايا العيد</a></li>
+            <li><a class="dropdown-item" href="#">هدايا التخرج</a></li>
+            <li><a class="dropdown-item" href="#">هدايا عيد الحب </a></li>
+            <li><a class="dropdown-item" href="#">هدايا عيد الأم  </a></li>
+            <li><a class="dropdown-item" href="#">هدايا أطفال </a></li>
+            <li><a class="dropdown-item" href="#">هدايا أعياد الميلاد  </a></li>
+            <li><a class="dropdown-item" href="#">هدايا رمضانية  </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nava dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            تنسيق هدايا
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">تغليف</a></li>
+            <li><a class="dropdown-item" href="#"> كروت هدايا</a></li>
+            <li><a class="dropdown-item" href="#"> تنسيق هدايا</a></li>
+          </ul>
+        </li>
+                     </li>
+                  </ul>
+                 </div>
+          </div>
+        </nav>
+     </div>
+    </header>
+    <!-- end header  -->
+
+<!-- start banner  -->
+ <section class="banner">
+    <h2 class="category-title">قسم الورود</h2>
+    
+ </section>
+<!-- end start banner  -->
+
+<div class="container mt-5">
+             <button class="navbar-toggler mini-icon d-md-none" type="button"  data-bs-toggle="offcanvas" data-bs-target="#filter" aria-controls="offcanvasExample">
+               <i class="fa-solid fa-bars-staggered"></i>
+              </button>    
+            
+    <div class="row ">        
+    <div class="col col-md-3 d-none d-sm-block">
+          
+     <div class="fillter-section sticky-lg-top ">
+        <h4>فلترة بالبحث</h4>
+        <input class="form-control" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+
+        <select name="" id="" class="form-select mt-3">
+            <option value="">باقات ورد</option>
+            <option value="">ورد وكيك</option>
+            <option value="">ورد وشوكولا</option>
+            <option value="">باقات </option>
+            <option value="">ورد وقهوة </option>
+        </select>
+        <hr>
+        <h4>فلترة بالتصنيف</h4>
+       <div class="filtter-radio d-flex flex-column gap-1">
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">ورد وكيك</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">ورد شوكولا</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">ورد وقهوة  </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">باقات  </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">بوكسات </label>
+        </div>
+       </div>
+        <h4 class="mt-3">فلترة حسب المناسبة</h4>
+       <div class="filtter-radio d-flex flex-column gap-1">
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">عيد الميلاد </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">عيد الحل  </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">عيد الام</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا تخرج</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا الزواج </label>
+        </div>
+       </div>
+     </div>
+        </div>
+        <div class="col col-md-9">
+            <div class="row row-cols-md-2  ">
+         <div class="col product mb-3 ">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/f1.jpg" alt="product">
+               <div class="product-info">
+                <h3>باقة عرس</h3>
+                <p>باقة ورد طبيعي ابيض للعروس.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر130$</span>
+                <span>150$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100 mt-2">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+         </div>
+        <div class="col product mb-3 flowers">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p2.jpg" alt="product">
+               <div class="product-info">
+                <h3>بوكس تخرج</h3>
+                <p>بوكس ورد بالوان رايقة هدية مميزة بمناسبة التخرج.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر80$</span>
+                <span>70$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        <div class="col product mb-3 boxes">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p3.jpg" alt="product">
+               <div class="product-info">
+                <h3>ورد وكيك</h3>
+                <p>بوكس صغير فيه باقة ورد حمراء صغيرة وكيك.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر70$</span>
+                <span>55$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        <div class="col product mb-3 boxes">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p77.jpg" alt="product">
+               <div class="product-info">
+                <h3>بوكس نسائي</h3>
+                <p>بوكس  ورد باللون الزهر الرايق مع الورد والكيك.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر100$</span>
+                <span>85$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        
+         <div class="col product mb-3 ">
+           <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/c1.jpg" alt="product">
+               <div class="product-info">
+                <h3>ورد وقهوة</h3>
+                <p>ورد مشكل مع قهوة وبسكوت.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر80$</span>
+                <span>70$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+           </div>
+         </div>
+          <div class="col product mb-3 ">
+           <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/c2.jpg" alt="product">
+               <div class="product-info">
+                <h3>ورد وقهوة</h3>
+                <p>ورد جوري خمري مع ايس كافي.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر80$</span>
+                <span>70$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+           </div>
+         </div>
+        <div class="col product mb-3 ">
+           <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ck4.jpg" alt="product">
+               <div class="product-info">
+                <h3>ورد وشوكولا </h3>
+                <p>بوكس ورد ابيض غلى شكل قلب وشوكولا بطعمة الحليب.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر250$</span>
+                <span>270$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+           </div>
+         </div>
+         <div class="col product mb-3 ">
+           <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/ck5.jpg" alt="product">
+               <div class="product-info">
+                <h3>ورد وشوكولا </h3>
+                <p>باقة ورد وشوكولا فاخرة وشوكولا بطعمة الحليب.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر230$</span>
+                <span>250$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+           </div>
+         </div>
+
+        <div class="col product mb-3 boxes">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p88.jpg" alt="product">
+               <div class="product-info">
+                <h3>بوكس نسائي</h3>
+                <p>بوكس  ورد باللون البنفسج الرايق مع الورد والكيك.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر75$</span>
+                <span>55$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        <div class="col product mb-3 flowers">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p19.jpg" alt="product">
+               <div class="product-info">
+                <h3>بوكس ورد وشوكولا</h3>
+                <p>بوكس ورد على شكل قلب وشوكولا فاخرة.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر90$</span>
+                <span>80$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        <div class="col product mb-3 ">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/f5.jpg" alt="product">
+               <div class="product-info">
+                <h3>باقة ورد ساتان</h3>
+                <p>باقة ورد ساتان نهدية .</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر130$</span>
+                <span>150$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100 mt-2">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+         </div>
+        <div class="col product mb-3 flowers boxes">
+          <div class="card overflow-hidden">
+            <div class="quick-icon">
+              <a href="#quick-product"  data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-regular fa-heart"></i></a>
+              <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </div>
+            <img src="images/p21.jpg" alt="product">
+               <div class="product-info">
+                <h3> ورد مع بوكس</h3>
+                <p>باقة ورد جورري مع دب كبير وبوكس هدايا.</p>
+                <div class="stars mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="price mb-2">
+                <span>السعر200$</span>
+                <span>180$</span>
+               </div>
+               <button onclick="alert('تم اضافة المنتج الى السلة بنجاح')" class="btn btn-primary w-100">إضافة إلى السلة &nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+               </div>
+          </div>
+
+        </div>
+        
+      </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- start footer  -->
+ <footer>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+    <div class="col f1 mb-3">
+      <img src="images/logo4-removebg-preview.png" alt="logo" class="w-25 mb-2" >
+       <p >متجرنا يهتم بالجودة والخامة ونسعى الى توفير كل جديد وكل مايرضي عملائنا</p>
+          <ul class="navbar-nav ">
+            <li><i class="fa-solid fa-location-dot"></i>سوريا-دمشق</li>
+            <li><i class="fa-solid fa-phone"></i>09935844</li>
+            <li><i class="fa-solid fa-envelope"></i>razan@gmail.com</li>
+          </ul>
+    </div>
+    <div class="col f2 mb-3">
+      <h3>أهم الروابط</h3>
+      <ul class="navbar-nav mt-3 ">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#products">الاكثر مبيعاً</a></li>
+        <li><a href="#new-products">أحدث المنتجات</a></li>
+        <li><a href="#spicial">أحدث الأفكار</a></li>
+        <li><a href="#week-product">الخصومات</a></li>
+      </ul>
+    </div>
+    <div class="col f3 mb-3">
+      <h3>التصنيفات</h3>
+      <ul class="navbar-nav mt-3">
+        <li><a href="#category-item">التصنيفات حسب المناسبة</a></li>
+        <li><a href="#spicial">باقات ورد</a></li>
+        <li><a href="#ads1"> هدايا رجالية</a></li>
+        <li><a href="#ads1"> هدايا نسائية</a></li>
+        <li><a href="#category">بوكسات</a></li>
+      </ul>
+    </div>
+     <div class="col f4 mb-3">
+          <h3>النشرة البريدية</h3>
+          <p>نحن نقطة الوصل بين المتهادين لإسعاد من تحب بـ باقات ورد مضافا بالشوكليت أو بالقهوة أو الكيك الكوري أو كوب كيك أو هدايا رجالية أو هدايا نسائيه أو باقات ورد</p>
+          <form action="">
+            <input type="text" placeholder="الرجاء ادخال البريد الالكتروني" class="form-control mb-2">
+            <button class="btn btn-danger w-100">اشترك الآن</button>
+          </form>
+        </div>
+  </div>
+  <div class="row row-cols-2 mt-3">
+    <div class="col  ">
+      <img src="images/payments.png" alt="payments">
+    </div>
+     <div class="col d-flex justify-content-end ">
+      <p style="color: #1F88C9;" >حقوق النشر محفوظة</p>
+     </div>
+  </div>
+  </div>
+ </footer>
+<!-- end footer  -->
+
+
+
+
+
+<!--start Qick view product  -->
+ <div class="modal fade" id="quick-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg ">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+          <img class="img-fluid mb-3 "  src="images/p3.PNG" alt="ورد وكيك ">
+          <button class="btn btn-primary w-100 btn-modal">كافة التفاصيل</button>
+        </div>
+        <div class="col">
+          <h1 class="modal-title fs-5 my-2" > ورد وكيك</h1>
+          <p class="product-description">عندماتكون الهدية تروي قصة فيجب الاهتمام بالتفاصيل كهدية مميزة لعيد ميلاد او في عيد الحب قالب كيك على شكل قلب بلون احمر مع باقة ورد صغيرة باللون الاحمر أيضاً.</p>
+          <div class="quick-rivews">
+            <span>تقييمات زبائن :</span>
+            <div class="stars mb-2 d-inline-flex">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+               </div>
+                <div class="price mb-2">
+                <span>السعر70$</span>
+                <span>55$</span>
+               </div>
+               <div class="btns d-flex gap-2">
+                <div class="btn-group" >
+                <button type="button" class="btn ">+</button>
+                <button type="button" class="btn ">1</button>
+                <button type="button" class="btn ">-</button>
+                </div>
+                <div class="btns-2 gap-2 ">
+                  <button   class="btn btn-primary btns2-btn">إضافة إلى السلة&nbsp;<i class="fa-solid fa-cart-arrow-down "></i></button>
+                  <button class="btn btn-primary">اشترِ الان!</button>
+                </div>
+               </div>
+               <hr>
+               <div class="category">
+                <span>التصنيفات:</span>
+                <a href="">هدايا نسائية</a>
+               </div>
+               <div class="share">
+                <span>المشاركة :</span>
+                <div class="share-icon d-inline-flex gap-2  ">
+                <i class="fa-brands fa-facebook" style="color: #1F88C9;"></i>
+                <i class="fa-brands fa-instagram "style="color:#DF2272;" ></i>
+                <i class="fa-brands fa-twitter" style="color: #1F88C9;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                <i class="fa-brands fa-linkedin" style="color:#DF2272;" ></i>
+               </div>
+               </div>
+          </div>
+        </div>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--end Qick view product  -->
+
+
+
+<!-- cart  -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title " style="color: #DF2272;" id="offcanvasExampleLabel">سلة المشتريات</h5>
+    <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row row-cols-1  row-mini-card">
+      <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25" src="images/p9.jpg " alt="بوكس نسائي">
+        <p>بوكس  نسائي فاخر جداً.</p>
+        <div class="btn-group btn-quintity-mini" >
+        <button type="button" class="btn ">+</button>
+        <button type="button" class="btn ">1</button>
+        <button type="button" class="btn ">-</button>
+        </div>
+      </div> 
+      <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25" src="images/p4.jpg" alt="هدية القمر المضيء">
+        <p> هدية القمر المضيء.</p>
+        <div class="btn-group btn-quintity-mini" >
+        <button type="button" class="btn ">+</button>
+        <button type="button" class="btn ">1</button>
+        <button type="button" class="btn ">-</button>
+        </div>
+      </div>
+        
+      <div class="col mini-card d-flex justify-content-between align-items-center">
+        <img class="img-fluid w-25" src="images/p19.jpg" alt="باقة ورد وشوكولا ">
+        <p>باقة ورد وشوكولا .</p>
+        <div class="btn-group btn-quintity-mini" >
+        <button type="button" class="btn ">+</button>
+        <button type="button" class="btn ">1</button>
+        <button type="button" class="btn ">-</button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3">
+      <p class="alert alert-danger p-3 my-3 text-center " >المجموع الاجمالي للمنتجات هو 380$</p>
+      <button class="btn btn-primary btns2-btn">عرض السلة &nbsp; <i class="fa-solid fa-cart-shopping"></i></button>
+      <button class="btn btn-primary btns3-btn">إتمام الطلب بنجاح</button>
+
+    </div>
+      </div>
+</div>
+<!-- end cart  -->
+
+<!-- filter  -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title " style="color: #DF2272;" id="offcanvasExampleLabel">الفلترة </h5>
+    <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="fillter-section sticky-lg-top ">
+        <h4>فلترة بالبحث</h4>
+        <input class="form-control" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+
+        <select name="" id="" class="form-select mt-3">
+            <option value="">باقات ورد</option>
+            <option value="">ورد وكيك</option>
+            <option value="">ورد وشوكولا</option>
+            <option value="">هدايا نسائية</option>
+            <option value="">هدايا رجالية</option>
+        </select>
+        <hr>
+        <h4>فلترة بالتصنيف</h4>
+       <div class="filtter-radio d-flex flex-column gap-1">
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">ورد وكيك</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">ورد شوكولا</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا نسائية </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا رجالية </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">بوكسات </label>
+        </div>
+       </div>
+        <h4 class="mt-3">فلترة حسب المناسبة</h4>
+       <div class="filtter-radio d-flex flex-column gap-1">
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">عيد الميلاد </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">مولود جديد </label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">عيد الام</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا تخرج</label>
+        </div>
+        <div class="">
+             <input name="catecory" type="radio" class="form-check-radio">
+             <label for="" class="form-label">هدايا الزواج </label>
+        </div>
+       </div>
+     </div>
+    
+      </div>
+</div>
+<!-- end filter  -->
+
+
+
+
+ <!-- login  -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title " style="color: #1F88C9;" id="offcanvasExampleLabel">تسجيل الدخول </h5>
+    <button type="button" class="btn-close"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="mini-login">
+        <form>
+  <div class="mb-3">
+    <label for="email" class="form-label">اسم المستحدم أو البريد</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="mb-3">
+    <label for="Password" class="form-label">كلمة المرور</label>
+    <input type="password" class="form-control" id="Password">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+  </div>
+  <button type="submit" class="btn btn-primary w-100 my-3 btn1-login  text-white">تسجيل الدخول</button>
+     </form>
+     <div class="alert alert-danger text-center">
+      <a href="" style="color:#8a053c !important;">انقر هنا في حال نسيت كلمة المرور</a>
+     </div>
+     <hr>
+     <div class="text-center mt-3">
+      <i class="fa-regular fa-user fa-5x"></i>
+      <p style="color:#DF2272 ;">لا يوجد لديك بريد الكتروني؟!</p>
+      <a class="btn btn-danger text-white w-100 btn2-login" href="">انشأ حساب جديد</a>
+     </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- end login  -->
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
