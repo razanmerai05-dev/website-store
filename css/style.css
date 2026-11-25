@@ -688,7 +688,7 @@ h1{
 footer{
     padding-top: 50px;
     margin-top: 80px;
-    background-image: url("../images/bg2.jpg");
+    background-image: url(../images/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
